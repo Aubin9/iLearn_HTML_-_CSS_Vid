@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /*this is for us to be abble to set the width and the height of an inlin element. Example: <span>*/
+}
+body {
+  margin: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-color: greenyellow;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  border: 2px solid yellowgreen;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+.box3 {
+  width: 50%; /*this mean 50% of the parent element*/
+  /* width: 50vw; meaning 50% of the view port width*/
+  height: 100vh; /*view port height, this mean it will fit 100% of the view port for the height*/
+  background-color: gold;
+  border-top: 3px solid orange; /*the size of the border does not varies whatever is the size of the screen*/
+  /* em and rem is relative to the font-size */
+  /* width:10em; => 10 x the font size of the current element */
+  /* rem => for the root element of the browser */
+}
+.boxes {
+  border: 3px solid lightgray;
+}
+.boxx {
+  width: 5rem;
+  height: 5rem;
+}
+.box_one {
+  background-color: gold;
+}
+.box_two {
+  background-color: tomato;
+  position: relative;
+  left: 4rem;
+  bottom: 4rem;
+  z-index: -1;
+}
+.box_three {
+  background-color: aqua;
+}
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: aquamarine;
+  float: left;
+}
+.clear {
+  clear: both;
+}
+/* display flex: justify-content; align-items; flex-direction; align-content; flex-wrap; flex-basis; flex-grow; flex-shrink */
+
+.container {
+  display: grid;
+  /* 3x2 grid */
+  /* grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px; */
+  /* grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(2, 100px); */
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  border: 3px solid brown;
+  justify-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.box_grid {
+  width: 5rem;
+  height: 5rem;
+  background-color: brown;
+}
+/* display: grid; : justify-items; align-items */
+
+@media screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(3, 100px);
+  }
+}
+/* and (max-width: 900px) */
+@media screen and (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(4, 100px);
+  }
+}
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  .container {
+    padding: 0.5cm;
+  }
+}

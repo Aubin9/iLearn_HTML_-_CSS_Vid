@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Here we will learn images in html and how to style them using css"
+    />
+    <meta name="keywords" content="Images, HTML, CSS, Image" />
+    <link rel="stylesheet" href="../../../css/normalize.css" />
+    <link rel="stylesheet" href="./image.css" />
+    <title>Images</title>
+  </head>
+  <body>
+    <a href="./exercise.html">EXERCISE</a>
+    <div class="image"></div>
+    <img src="../../../imges/dishes.png" alt="" />
+    <img src="../../../imges/landing.png" alt="" />
+    <img src="../../../imges/rocketship.png" alt="" />
+    <img src="../../../imges/saturn.png" alt="" />
+    <img src="../../../imges/ufo.png" alt="" />
+    <img
+      src="../../../imges/meal.jpg"
+      alt=" A bowl of salmon and curry"
+      class="meal"
+      srcset="
+        ../../../imges/meal.jpg    1x,
+        ../../../imges/meal@2x.jpg 2x,
+        ../../../imges/meal@3x.jpg 3x
+      "
+    />
+    <img
+      src="../../../imges/meal.jpg"
+      alt=" A bowl of salmon and curry"
+      class="meal"
+      srcset="
+        ../../../imges/meal.jpg     400w,
+        ../../../imges/meal@2x.jpg  800w,
+        ../../../imges/meal@3x.jpg 1200w
+      "
+    />
+    <picture>
+      <source
+        type="image/webp"
+        srcset="
+          ../../../imges/meal.webp    1x,
+          ../../../imges/meal@2x.webp 2x,
+          ../../../imges/meal@3x.webp 3x
+        "
+      />
+      <source
+        type="image/jpeg"
+        srcset="
+          ../../../imges/meal.jpg    1x,
+          ../../../imges/meal@2x.jpg 2x,
+          ../../../imges/meal@3x.jpg 3x
+        "
+      />
+      <img src="../../../imges/meal.jpg" alt=" A bowl of salmon and curry" />
+    </picture>
+    <img src="../../../imges/meal@3x.jpg" alt="" />
+  </body>
+</html>

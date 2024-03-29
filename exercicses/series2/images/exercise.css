@@ -1,0 +1,86 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+.container1 {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  background: url(./background_w320.jpg);
+  background-repeat: no-repeat;
+  color: azure;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+span {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 300px;
+  letter-spacing: 1.5px;
+}
+h1.title {
+  font-weight: 900;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000;
+  word-spacing: 1.5rem;
+}
+
+.container2 {
+  background: rgb(35, 7, 44);
+  color: #fff;
+
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10rem;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+}
+.container2 li a {
+  text-decoration: none;
+  color: inherit;
+
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.container2 li a:hover {
+  background: rgb(21, 3, 27);
+  color: #fff;
+}
+
+@media screen and (max-width: 853px) {
+  .container1 {
+    background: url(./background_w853.jpg);
+  }
+}
+@media screen and (max-width: 1228px) {
+  .container1 {
+    background: url(./background_w1228.jpg);
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container1 {
+    background: url(./background_w1440.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .container2 {
+    width: 20%;
+    height: 100vh;
+  }
+}

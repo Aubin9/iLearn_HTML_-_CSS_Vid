@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    button:hover {
+      background: rgb(221, 221, 40);
+      transform: scale(1.3);
+      cursor: pointer;
+    }
+    button {
+      padding: 0.3rem 0.7rem;
+      background-color: aqua;
+      border: 1px solid aqua;
+      border-radius: 3px;
+    }
+  </style>
+  <body style="background: blue">
+    <h1>Page de formulaire</h1>
+    <form action="" method="get">
+      <div>
+        <label for="pseudo"> Votre pseudo</label>
+        <input type="text" id="pseudo" />
+      </div>
+      <div>
+        <label for="pwd">Mot de passe</label>
+        <input type="password" id="pwd" />
+      </div>
+      <div>
+        <label for="pwdx2">confirmer mot de passe</label>
+        <input type="password" id="pwdx2" />
+      </div>
+
+      <fieldset style="border: 0">
+        <legend>OS preferer</legend>
+        <div>
+          <input type="radio" name="systeme" id="winXP" />
+          <label for="winXP">Windows XP</label>
+        </div>
+        <div>
+          <input type="radio" name="systeme" id="winVista" />
+          <label for="winVista">Windows Vista</label>
+        </div>
+        <div>
+          <input type="radio" name="systeme" id="Mac" />
+          <label for="Mac">MacOS X</label>
+        </div>
+        <div>
+          <input type="radio" name="systeme" id="Linux" />
+          <label for="Linux">Linux</label>
+        </div>
+        <div>
+          <input type="radio" name="systeme" id="other" />
+          <label for="other">autre</label>
+        </div>
+      </fieldset>
+
+      <span>Vous Possedez:</span>
+      <span>
+        <div>
+          <input type="checkbox" name="iHave" id="ordinateur" />
+          <label for="ordinateur">Un ordinateur de bureau</label>
+        </div>
+        <div>
+          <input type="checkbox" name="iHave" id="portable" />
+          <label for="portable">Un portable</label>
+        </div>
+        <div>
+          <input type="checkbox" name="iHave" id="netbook" />
+          <label for="netbook">Un netbook</label>
+        </div>
+        <div>
+          <input type="checkbox" name="iHave" id="tablette" />
+          <label for="tablette">Une tablette (Pad)</label>
+        </div>
+      </span>
+      <span>Votre profession: </span>
+      <span>
+        <select name="" id="">
+          <option>Chomeur</option>
+          <option selected>Etudiant</option>
+          <option>Fonctionnaire</option>
+          <option>Prive</option>
+          <option>Retraite</option>
+        </select>
+      </span>
+      <div>
+        <button type="submit">S'inscrire</button>
+      </div>
+    </form>
+  </body>
+</html>

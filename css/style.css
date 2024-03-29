@@ -1,0 +1,71 @@
+section :first-child {
+  color: orange;
+  font-style: italic;
+}
+a:visited,
+a:link {
+  color: blue;
+}
+a:hover,
+a:focus {
+  color: yellow;
+}
+/* :first-of-type 
+    p:first-of-type
+*/
+/* :last-of-type 
+    p:last-of-type
+*/
+
+ul li:nth-child(odd) {
+  /*odd or even or 3n*/
+  color: aquamarine;
+}
+
+.pseudo_elt::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+}
+.pseudo_elt::first-line {
+  font-weight: bold;
+}
+.pseudo_elt::selection {
+  background-color: green !important;
+}
+.pseudo_elt::selection {
+  background-color: black;
+}
+p::before {
+  content: "...";
+  display: block;
+}
+.box1 {
+  /* we can either use background:; or background-image:; to allow gradient */
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, dodgerblue, yellow);
+}
+.box2 {
+  /* we can either use background:; or background-image:; to allow gradient */
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, dodgerblue, yellow 30%);
+}
+.box3 {
+  /* we can either use background:; or background-image:; to allow gradient */
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, dodgerblue, yellow 30%, green);
+  box-shadow: 0 0 10px grey;
+}
+.box4 {
+  /* we can either use background:; or background-image:; to allow gradient */
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(dodgerblue, yellow, green);
+  border: 10px dotted royalblue;
+  border-width: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 10px -10px grey;
+  /* text-shadow:; this is used for text */
+}

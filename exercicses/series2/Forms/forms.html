@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Forms, CSS, HTML" />
+    <meta
+      name="description"
+      content="Here we are seeing forms in web development"
+    />
+    <link rel="stylesheet" href="../../../css/normalize.css" />
+    <link rel="stylesheet" href="./forms.css" />
+    <title>FORMS</title>
+  </head>
+  <body>
+    <a href="./exercise.html">EXERCISE</a>
+    <form action="" method="POST">
+      <!--action="set the url of where the data will be sent (backend)" method="this is all about how we are submitting the data (GET or POST)"-->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" value="e.g. Aubin" autofocus name="name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="peraubcorps@gmail.com"
+          autocomplete="off"
+          required
+          name="email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input id="age" type="number" value="18" min="18" max="35" />
+        <!--readonly-->
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password</label>
+        <input id="pwd" type="password" minlength="8" />
+      </div>
+      <div class="form-group">
+        <label for="dt">Date</label>
+        <input id="dt" type="date" />
+      </div>
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea name="" id="comment" cols="30" rows="10"></textarea>
+      </div>
+      <!-- Data lists -->
+      <div class="form-group">
+        <input type="text" list="countries" />
+        <datalist id="countries">
+          <option data-value="1">Australia</option>
+          <option value="2">Cameroon</option>
+          <option>Canada</option>
+          <option>Belgium</option>
+          <option>Germand</option>
+          <option>France</option>
+          <option>USA</option>
+        </datalist>
+      </div>
+      <div>
+        <select name="" id="">
+          <!--multiple-->
+          <option>Select a course...</option>
+          <option value="1" selected>HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JavaScript</option>
+        </select>
+        <select>
+          <optgroup label="Front-end courses">
+            <option value="1" selected>HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JavaScript</option>
+          </optgroup>
+          <optgroup label="Back-end courses">
+            <option value="1">Node.js</option>
+            <option value="2">PHP</option>
+            <option value="3">DJANGO</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div>
+        <input type="checkbox" name="" id="front-end" />
+        <label for="front-end" class="label_check">Front-end</label>
+      </div>
+      <div>
+        <input type="checkbox" name="" id="backend" checked />
+        <label for="backend" class="label_check">Back-end</label>
+      </div>
+      <div>
+        <input type="radio" name="menbership" id="silver" />
+        <label for="silver" class="label_check">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="menbership" id="gold" />
+        <label for="gold" class="label_check">Gold</label>
+      </div>
+
+      <input type="range" name="" id="" min="0" max="100" value="70" />
+
+      <div>
+        <input type="file" name="" id="" accept=".png , .gif , .jpg" />
+        <input type="file" name="" id="" multiple />
+        <input type="file" name="" id="" accept="image/*" />
+        <!--video/* or audio/*-->
+      </div>
+
+      <fieldset>
+        <legend>Billing Address</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+      <fieldset>
+        <legend>Payment</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>

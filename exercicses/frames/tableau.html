@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,
+    th,
+    td,
+    tr {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+    th[colspan="5"] {
+      color: #fff;
+      background-color: #494242;
+    }
+  </style>
+  <body style="background: green">
+    <table>
+      <caption>
+        Planning du cours d'informatique
+      </caption>
+      <tr>
+        <th colspan="5">Planning du cours d'informatique</th>
+      </tr>
+      <tr>
+        <th>Lundi</th>
+        <th>Mardi</th>
+        <th>Mercredi</th>
+        <th>Jeudi</th>
+        <th>Vendredi</th>
+      </tr>
+      <tr>
+        <td>TD</td>
+        <td rowspan="2">COURS</td>
+        <td>TP</td>
+        <td>TD</td>
+        <td rowspan="2">Examen</td>
+      </tr>
+      <tr>
+        <td>Cours</td>
+        <!-- <td rowspan="2">COURS</td> -->
+        <td colspan="2" rowspan="2">Cours</td>
+        <!-- <td>TD</td> -->
+        <!-- <td rowspan="2">Examen</td> -->
+      </tr>
+      <tr>
+        <td>TP</td>
+        <td>TD</td>
+        <!-- <td>TP</td> -->
+        <!-- <td>TD</td> -->
+        <td rowspan="2">Correction</td>
+      </tr>
+    </table>
+  </body>
+</html>

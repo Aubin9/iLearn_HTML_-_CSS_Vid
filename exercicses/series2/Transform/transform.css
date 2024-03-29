@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: gold;
+  transition: transform 1s ease-in 0.5s, background-color 1s linear;
+  /* linear, ease-in, ease-out, cubic-bezier() */
+  /* https://cubic-bezier.com/ */
+}
+
+.box:hover {
+  transform: rotate(15deg) scale(0.8) skew(15deg) translate(-10px, -10px);
+  background-color: aqua;
+  /* perspective(200px) */
+  /* transform-origin: 0 50%; */
+}
+
+.box-2 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+  /* animation-name: key_name;
+  animation-duration: 5s;
+
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-out;
+  animation-direction: alternate; */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* https://animate.style */
+}
+
+.animation-key_name {
+  animation-name: key_name;
+  animation-duration: 5s;
+
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
+@keyframes key_name {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: rotate(45deg);
+    background: tomato;
+  }
+  75% {
+    transform: rotate(30deg);
+    background: gray;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

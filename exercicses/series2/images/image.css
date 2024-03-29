@@ -1,0 +1,15 @@
+/* .meal {
+  width: 100vw;
+  height: 100vh;
+} */
+div.image {
+  background: url(../../../imges/me.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 200px 200px;
+  background-attachment: fixed;
+  /* height: 300vh; */
+}
+.meal {
+  width: 400px;
+}

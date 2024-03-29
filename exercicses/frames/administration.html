@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      background-color: rgb(197, 186, 186);
+    }
+    form {
+      height: 100vh;
+    }
+    input {
+      border-radius: 5px;
+      border: 1px solid #000;
+      width: 30%;
+      outline: 0;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      transition: border 3s, box-shadow 3s;
+    }
+    input:focus {
+      box-shadow: 0 0 0 5px #b9d3fa;
+    }
+    div {
+      margin: 20px 0;
+    }
+  </style>
+  <body>
+    <h3>Zone Reservee aux administrateurs du site</h3>
+    <form action="https://www.google.com/" method="get">
+      <div>
+        <label for="nom">Login :</label>
+        <input type="text" id="nom" />
+      </div>
+      <div>
+        <label for="pwd">Mot de passe</label>
+        <input type="password" name="" id="pwd" />
+      </div>
+    </form>
+  </body>
+</html>
