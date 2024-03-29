@@ -21,11 +21,11 @@
 - Images: free images: https://unsplash.com/
 - Video and audio: https://pexels.com find free images and video here
 - Lists & tables
-- Containers elements: <div>, <span>, <article>, <figure>, <mark>, <time>
-- Structural elements: <header>-> <nav>, <main>, <footer>-> <nav>
-  • <em>, <strong>, <h1>, <a>, <video>, <audio>, <ul>, <ol>, <li>, <table>, <th>, <tr>, <td>, <thead>, <tbody>, <tfoot>, <div>, <span>, <p>, <mark> (highlight), <figcaption>
+- Containers elements: div, span, article, figure, mark, time
+- Structural elements: header-- nav, main, footer-- nav
+  • em, strong, h1, a, video, audio, ul, ol, li, table, th, tr, td, thead, tbody, tfoot, div, span, p, mark (highlight), figcaption
   • &lt;html&gt; &copy; (go to https://dev.w3.org to see the complete list
-  • Duplicated that can be done in CSS: <i>, <b>
+  • Duplicated that can be done in CSS: i, b
 
 ## CSS basics
 
